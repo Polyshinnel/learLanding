@@ -73,6 +73,7 @@ body{
 }
 
 .footer{
+    padding-bottom: 50px;
     .footer__wrapper{
         display: flex;
         align-items: center;
@@ -92,3 +93,130 @@ body{
 .footer_margin{
     margin-top: 150px;
 }
+
+.header__big{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .header__big-text{
+        width: 583px;
+
+        h2{
+            font-weight: 700;
+            font-size: 54px;
+            line-height: 130%;
+            color: $blackColor;
+        }
+
+        p{
+            margin-top: 24px;
+            color: $grayColor;
+            font-size: 14px;
+            line-height: 140%;
+            letter-spacing: 0.02em;
+            width: 477px;
+        }
+
+        .btn-component_header{
+            padding: 0 40px;
+            font-size: 16px;
+            margin-top: 49px;
+        }
+    }
+
+    .header__big-ava{
+        position: relative;
+
+        .header__big-ava-round-dashed{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 572px;
+            height: 572px;
+            border-radius: 50%;
+            border: 4px dashed $blueColor;
+    
+            .header__big-ava-round{
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+                width: 491px;
+                height: 491px;
+                background: $blueColor;
+                border-radius: 50%;
+                overflow: hidden;
+    
+                img{
+                    width: 95%;
+                    object-fit: contain;
+                }
+            }
+        }
+
+        .header__big-ava-says{
+            position: absolute;
+            right: 50px;
+            top: 50px;
+            
+            .header__big-ava-says-text{
+                width: 172px;
+                padding: 24px 16px;
+                font-size: 13px;
+                color: $blackColor;
+                border-radius: 8px;
+                background: #fff;
+            }
+
+            .header__big-ava-says-triangle{
+                position: absolute;
+                top: 100%;
+                left: 36px;
+                border: 20px solid transparent; 
+                border-left: 20px solid #fff; 
+                border-top: 20px solid #fff;
+            }
+        }
+
+        .header__big-ava-skills{
+            position: absolute;
+            left: -49px;
+            top: 208px;
+            width: 224px;
+            padding: 28px;
+            box-shadow: 0px 24px 34px rgba(199, 201, 217, 0.25);
+            background: #fff;
+            border-radius: 8px;
+
+            .progress-title{
+                font-size: 14px;
+                color: $blackColor;
+                font-weight: 500;
+                margin-bottom: 20px;
+            }
+
+            .progress-block{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                label{
+                    font-size: 12px;
+                    color: $blackColor;
+                }
+
+                progress{
+                    width: 100%;
+                    margin-top: 5px;
+                    height: 10px;
+                }
+            }
+
+            .progress-block+.progress-block{
+                margin-top: 10px;
+            }
+        }
+    }
+}
+

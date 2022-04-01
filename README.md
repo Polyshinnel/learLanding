@@ -15,7 +15,11 @@ ____
 ## Отслеживание задач
 
 1. :white_check_mark: Создать макет в figma 
-2. :negative_squared_cross_mark: Сверстать страницы
-3. :negative_squared_cross_mark: Создать слайдер
+2. :white_check_mark: Сверстать страницы
+3. :white_check_mark: Создать слайдер
 4. :negative_squared_cross_mark: Создать интерактивный список
 5. :negative_squared_cross_mark: Разместить анимацию и добавить запуск по кнопке
+
+____
+
+## upd Подумал и решил что мобильную версию делать не буду

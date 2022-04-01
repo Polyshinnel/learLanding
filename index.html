@@ -26,7 +26,7 @@
                 <div class="header__big">
                     <div class="header__big-text">
                         <h2>Я backend и немного frontend developer</h2>
-                        <p>Работаю в компании Snabway, занимаюсь разработкой внутренних сервисов компании, с 2022 года начал разрабатывать на kotlin</p>
+                        <p>Работаю в компании Snabway, занимаюсь разработкой внутренних сервисов, с 2022 года начал учиться разработке на kotlin</p>
                         <button class="btn-component btn-component_header">Подробнее</button>
                     </div>
                     <div class="header__big-ava">
@@ -62,9 +62,124 @@
             </div>
         </div>
     </header>
-    <main class="page-wrapper">
 
-    </main>
+    <div class="box-container">
+        <main class="page-wrapper">
+            <section class="section-component">
+                <div class="section-component__title">
+                    <h2>Разработка</h2>
+                    <p>Вот некоторые базовые навыки разработки которыми я овладел</p>
+                </div>
+
+                <div class="skill-block skill-block_main">
+                    <div class="skill-block__card">
+                        <img src="assets/img/icons/kotlin.svg" alt="">
+                        <h4>Android Kotlin</h4>
+                        <p>Базово изучил android разработку для создания мобильного приложения бонусной программы</p>
+                    </div>
+
+                    <div class="skill-block__card">
+                        <img src="assets/img/icons/php.svg" alt="">
+                        <h4>PHP</h4>
+                        <p>Основной язык разработки, на котором я сейчас веду большинство своих проектов</p>
+                    </div>
+
+                    <div class="skill-block__card">
+                        <img src="assets/img/icons/js.svg" alt="">
+                        <h4>JavaScript</h4>
+                        <p>Активно изучаю JS для более полного понимания frontend разработки на курсе x53apps</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-component section-component_margin">
+                <div class="section-component__title">
+                    <h2>Партфолио</h2>
+                    <p>Последние из моих наиболее удачных работ на текущий момент</p>
+                </div>
+
+                <div class="partfolio-block partfolio-block_main">
+                    <div class="partfolio-card partfolio-card_big">
+                        <img src="assets/img/partfolio/img1.jpg" alt="">
+                        <h4>Личный кабинет ИЛКППЭ</h4>
+                        <p>Разработка личного кабинета, интеграция с 1с</p>
+                    </div>
+
+                    <div class="partfolio-card partfolio-card_big">
+                        <img src="assets/img/partfolio/img2.jpg" alt="">
+                        <h4>Интернет магазин Aquaniya</h4>
+                        <p>Разработка интернет магазина</p>
+                    </div>
+
+                    <div class="partfolio-card partfolio-card_small">
+                        <img src="assets/img/partfolio/img3.jpg" alt="">
+                        <h4>Охранное агенство Аякс</h4>
+                        <p>Разработка лэндинга</p>
+                    </div>
+
+                    <div class="partfolio-card partfolio-card_small">
+                        <img src="assets/img/partfolio/img4.jpg" alt="">
+                        <h4>StroyBack mobile</h4>
+                        <p>Разработка мобильного приложения</p>
+                    </div>
+
+                    <div class="partfolio-card partfolio-card_small">
+                        <img src="assets/img/partfolio/img5.jpg" alt="">
+                        <h4>Агенство недвижимости Веста</h4>
+                        <p>Разработка портала агенства недвижимости</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-component section-component_margin">
+                <div class="section-component__title">
+                    <h2>Слайдер</h2>
+                    <p>Слайдер с миниатюрами</p>
+                </div>
+
+                <div class="box-container">
+                    <div class="slider-block">
+                        <div class="slider-component">
+                            <div class="slider-container">
+                                <img src="assets/img/slider/1.jpg" alt="">
+                            </div>
+                            <div class="slider-arrows">
+                                <div class="slider-arrow slider-arrow_left-arrow" onclick="prevImg()">
+                                    <img src="assets/img/icons/arrow-left.svg" alt="">
+                                </div>
+                                <div class="slider-arrow slider-arrow_right-arrow" onclick="nextImg()">
+                                    <img src="assets/img/icons/arrow-right.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="slider-text">
+                                <p>Текст со слайдера</p>
+                            </div>
+                            <div class="slider-miniatures" onclick="setActiveElem()">
+                                <div class="slider-miniature slider-miniature_active">
+                                    <img src="assets/img/slider/1.jpg" alt="" data-text="Текст со слайда 1">
+                                </div>
+    
+                                <div class="slider-miniature">
+                                    <img src="assets/img/slider/2.jpg" alt="" data-text="Текст со слайда 2">
+                                </div>
+    
+                                <div class="slider-miniature">
+                                    <img src="assets/img/slider/3.jpg" alt="" data-text="Текст со слайда 3">
+                                </div>
+    
+                                <div class="slider-miniature">
+                                    <img src="assets/img/slider/4.jpg" alt="" data-text="Текст со слайда 4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+        </main>
+    </div>
+    
+
     <footer class="footer footer_margin">
         <div class="box-container">
             <div class="footer__wrapper">
@@ -81,5 +196,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="assets/js/slider.js"></script>
 </body>
 </html>

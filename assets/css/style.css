@@ -133,6 +133,10 @@ body {
   margin-left: 40px;
 }
 
+.navigation-component .active a {
+  color: #7868E6;
+}
+
 .btn-component {
   height: 44px;
   padding: 0 20px;
@@ -447,6 +451,10 @@ body {
 .slider-component {
   width: 100%;
   position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .slider-component .slider-container {
@@ -462,6 +470,7 @@ body {
           justify-content: center;
   height: 402px;
   overflow: hidden;
+  border-radius: 8px;
 }
 
 .slider-component .slider-container img {
@@ -565,5 +574,39 @@ body {
 
 .slider-component .slider-miniatures .slider-miniature + .slider-miniature {
   margin-left: 21px;
+}
+
+.animation-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.animation-container #container {
+  width: 100%;
+  height: 484px;
+  background: #DFDDEC;
+  position: relative;
+}
+
+.animation-container #circle {
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  background: #7868E6;
+  top: 30px;
+  left: 30px;
+  border-radius: 50%;
+}
+
+.btn-component_animation {
+  margin-top: 50px;
 }
 /*# sourceMappingURL=style.css.map */

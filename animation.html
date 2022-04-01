@@ -12,12 +12,12 @@
         <div class="box-container">
             <div class="header__wrapper">
                 <div class="header__top">
-                    <h1 class="title-component">Нестеров Андрей</h1>
+                    <h1 class="title-component">Анимация</h1>
                     <nav class="header__nav">
                         <ul class="navigation-component">
-                            <li class="active"><a href="/index.html">Главная</a></li>
+                            <li><a href="/index.html">Главная</a></li>
                             <li><a href="/interactive-list.html">Интерактивный список</a></li>
-                            <li><a href="/animation.html">Анимация</a></li>
+                            <li class="active"><a href="/animation.html">Анимация</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -32,6 +32,16 @@
                     <h2>Анимация</h2>
                     <p>Для запуска анимации нажмите на кнопку "Запустить"</p>
                 </div>
+
+                <div class="animation-container">
+                    <div id="container">
+                        <div id="circle"></div>
+                    </div>
+
+                    <button class="btn-component btn-component_animation" onclick="startAnimation()">Запустить анимацию</button>
+                </div>
+
+
             </section>
         </main>
     </div>
@@ -52,5 +62,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="assets/js/animation.js"></script>
 </body>
 </html>

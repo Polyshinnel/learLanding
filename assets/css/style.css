@@ -748,10 +748,93 @@ body {
   font-family: 'Inter', sans-serif;
   font-size: 14px;
   color: #121212;
+  resize: none;
 }
 
 .interactive-list-component .interactive-list-component__wrapper .interactive-list-component__card .interactive-list-component__card-body_active {
   height: 200px;
   padding: 20px;
+}
+
+.interactive-list-component-form {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.interactive-list-component-form .interactive-list-component-form-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 350px;
+  padding: 30px;
+  background: #F9F8FF;
+}
+
+.interactive-list-component-form .interactive-list-component-form-block .interactive-list-component-form-block-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.interactive-list-component-form .interactive-list-component-form-block .interactive-list-component-form-block-input label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #121212;
+  margin-bottom: 10px;
+}
+
+.interactive-list-component-form .interactive-list-component-form-block .interactive-list-component-form-block-input input {
+  width: 100%;
+  height: 50px;
+  background: #fff;
+  border: 1px solid #DFDDEC;
+  border-radius: 5px;
+  padding: 0 15px;
+  font-size: 14px;
+  color: #121212;
+}
+
+.interactive-list-component-form .interactive-list-component-form-block .interactive-list-component-form-block-input textarea {
+  width: 100%;
+  border-radius: 5px;
+  height: 100px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #121212;
+  resize: none;
+  padding: 15px;
+  border: 1px solid #DFDDEC;
+}
+
+.interactive-list-component-form .interactive-list-component-form-block .interactive-list-component-form-block-input + .interactive-list-component-form-block-input {
+  margin-top: 15px;
+}
+
+.interactive-list-component-form .interactive-list-component-form-block .btn-component_form {
+  margin-top: 20px;
 }
 /*# sourceMappingURL=style.css.map */

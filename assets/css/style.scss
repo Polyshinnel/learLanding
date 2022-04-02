@@ -441,3 +441,126 @@ body{
 .btn-component_animation{
     margin-top: 50px;
 }
+
+.interactive-list-component{
+    .interactive-list-component__wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -52px;
+        margin-top: -30px;
+
+        .interactive-list-component__card{
+            width: 365px;
+            margin-left: 52px;
+            margin-top: 30px;
+        
+            .interactive-list-component__card-header{
+                width: 100%;
+                height: 63px;
+                background: $lightBlue;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 20px;
+                border-radius: 10px 10px 0px 0px;
+                border: 1px solid #DFDDEC;
+
+                input{
+                    width: 79%;
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: $blackColor;
+                    border: none;
+                    background: transparent;
+                }
+
+                .interactive-list-component__card-header-arrow{
+                    transform: rotate(0deg);
+                    transition: 0.3s all ease;
+                }
+
+                .interactive-list-component__card-header-arrow_active{
+                    transform: rotate(180deg);
+                }
+            }
+
+            .interactive-list-component__card-body{
+                padding: 0;
+                border-radius: 0px 0px 10px 10px;
+                border: 1px solid #DFDDEC;
+                position: relative;
+                height: 0;
+                transition: 0.3s all ease;
+                overflow: hidden;
+
+
+                .interactive-list-component__card-edit{
+                    position: absolute;
+                    right: 20px;
+                    top: 20px;
+                    
+                    .interactive-list-component__card-edit-menu-btn{
+                        width: 35px;
+                        height: 35px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+                    }
+                    
+                    .interactive-list-component__card-edit-list{
+                        margin-top: 15px;
+                        height: 0;
+                        overflow: hidden;
+                        transition: 0.3s all ease;
+
+                        .interactive-list-component__card-edit-btn{
+                            width: 35px;
+                            height: 35px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            background: $lightBlue;
+                            border-radius: 50%;
+                            transition: 0.3s all ease;
+                            border: 1px solid #DFDDEC;
+                            cursor: pointer;
+
+                            &:hover{
+                                background: $blueColor;
+
+                                svg{
+                                    path{
+                                        fill: $lightBlue;
+                                    }
+                                }
+                            }
+                        }
+
+                        .interactive-list-component__card-edit-btn+.interactive-list-component__card-edit-btn{
+                            margin-top: 4px;
+                        }
+                    }
+
+                    .interactive-list-component__card-edit-list-visible{
+                        height: 85px;
+                    }
+                }
+
+                .interactive-list-component__card-comment{
+                    height: 100%;
+                    width: 276px;
+                    border: none;
+                    font-family: 'Inter', sans-serif;
+                    font-size: 14px;
+                    color: $blackColor;
+                }
+            }
+
+            .interactive-list-component__card-body_active{
+                height: 200px;
+                padding: 20px;
+            }
+        }
+    }
+}

@@ -8,3 +8,14 @@ function goUp() {
         clearTimeout(timeOut);
     }
 }
+
+let btnMore = document.querySelector('.btn-component_header');
+btnMore.onclick = function(){
+    scrollTo();
+}
+function scrollTo(){
+    document.querySelector('#development').scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+    })
+}
